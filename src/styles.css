@@ -1,0 +1,38 @@
+body {
+    font-size: large;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 5px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    color: #000;
+    font-size: large;
+    text-decoration: none;
+}
+
+.box {
+    position: relative;
+    margin-top: 10%;
+}
+
+.intro {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #666;
+    border-radius: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.counter {
+    font-size: 2vw;
+}

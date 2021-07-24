@@ -1,0 +1,15 @@
+<div ngClass="box">
+  <div ngClass="intro">
+    <div>
+      <span ngClass="counter">Counter: {{ count$ | async }}</span><br />
+      <span>State updated {{ updatedAt$ | async | date: "yyyy-MM-dd-hh:mm:ss" }}</span>
+    </div>
+    <div>
+      <button (click)="increase()"> Increase </button>&nbsp;&nbsp;&nbsp;
+      <button (click)="decrease()" [disabled]="disableDecrease$ | async"> Decrease </button>&nbsp;&nbsp;&nbsp;
+      <button (click)="clear()" [disabled]="disableDecrease$ | async"> Clear </button>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
